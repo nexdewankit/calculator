@@ -12,6 +12,9 @@ public class Message {
     public static final String SYMBOL_MINUS = "-";
     public static final String SYMBOL_MULTIPLY = "*";
     public static final String SYMBOL_DIVIDE = "/";
+    public static final String TEXT_YES = "Y";
+    public static final String TEXT_NO = "N";
     public static final String DEFAULT_VALUE = "0";
     public static final String SYSTEM_ERR_MESSAGE = "System error, please try with some different inputs";
+    public static final String FINAL_VALUE_MESSAGE = "Final calculated value is => ";
 }

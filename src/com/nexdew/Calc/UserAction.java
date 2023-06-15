@@ -1,8 +1,8 @@
 package com.nexdew.Calc;
 
 public enum UserAction {
-    YES("y"),
-    NO("n");
+    YES(Message.TEXT_YES),
+    NO(Message.TEXT_NO);
 
     private final String value;
 

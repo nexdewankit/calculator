@@ -8,7 +8,6 @@ public class Calc {
     private BigDecimal secondValue;
     private BigDecimal ResultValue;
     private Action action;
-
     private UserAction userAction;
 
     public UserAction getUserAction() {
@@ -18,6 +17,7 @@ public class Calc {
     public void setUserAction(UserAction userAction) {
         this.userAction = userAction;
     }
+
     public BigDecimal getFirstValue() {
         return firstValue;
     }
@@ -72,8 +72,8 @@ public class Calc {
 
     public UserAction isValidUserAction(String userAction) {
         UserAction validAction = null;
-        for (UserAction a: UserAction.values()) {
-            if(a.getValue().equalsIgnoreCase(userAction)) {
+        for (UserAction a : UserAction.values()) {
+            if (a.getValue().equalsIgnoreCase(userAction)) {
                 validAction = a;
                 break;
             }
@@ -103,6 +103,8 @@ public class Calc {
             }
             this.setResultValue(result);
             setFirstValue(result);
+        } catch(ArithmeticException e) {
+            print(e.getMessage());
         } catch (NullPointerException e) {
             print(e.getMessage());
         }
